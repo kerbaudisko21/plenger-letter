@@ -59,49 +59,51 @@ export default function HomePage() {
         </div>
 
         <div className="hero-content">
-          <span className="eyebrow">Zhejiang · 五班 · Musim Semi</span>
+          <span className="eyebrow">Zhejiang · Spring</span>
           <h1 className="brush-title">此去经年</h1>
           <p className="hero-poem">
-            "from here, the years will pass" — 柳永, 雨霖铃
+            "from here, the years will pass" — Liu Yong, Rain on the
+            Bells
           </p>
-          <h2 className="display-title">Surat Perpisahan Kelas Bahasa</h2>
+          <h2 className="display-title">Farewell Letters</h2>
           <p className="subtitle">
-            Setahun belajar bahasa bareng di Zhejiang sudah selesai. Bunga
-            plum yang mekar waktu kita pertama datang, sekarang gugur waktu
-            kita mau pulang ke arah masing-masing. Sebelum semua bubar, ada
-            sepucuk surat kecil buat kamu.
+            A year of studying language together in Zhejiang has come to an
+            end. The plum blossoms that bloomed when we first arrived are
+            falling now, just as we head off in our own separate directions.
+            Before everyone scatters, there's a small letter waiting for
+            you.
           </p>
 
           <div className="hero-stats">
             <div className="hero-stat">
               <span className="num">19</span>
-              <span className="label">Teman</span>
+              <span className="label">Friends</span>
             </div>
             <div className="hero-stat-divider" />
             <div className="hero-stat">
               <span className="num">1</span>
-              <span className="label">Tahun</span>
+              <span className="label">Year</span>
             </div>
             <div className="hero-stat-divider" />
             <div className="hero-stat">
-              <span className="num">五班</span>
-              <span className="label">Kelas</span>
+              <span className="num">Zhejiang</span>
+              <span className="label">Where it happened</span>
             </div>
           </div>
         </div>
 
         <div className="scroll-cue" aria-hidden="true">
-          <span>Cari namamu</span>
+          <span>Find your name</span>
           <span>↓</span>
         </div>
       </section>
 
       <section className="paper-section">
         <div className="section-heading">
-          <h3 className="display-title">Pilih namamu</h3>
+          <h3 className="display-title">Choose your name</h3>
           <p className="subtitle">
-            Tiap orang punya boarding pass masing-masing menuju babak
-            berikutnya. Ketuk namamu untuk buka suratnya.
+            Everyone gets their own boarding pass to the next chapter. Tap
+            your name to open your letter.
           </p>
         </div>
 
@@ -109,10 +111,10 @@ export default function HomePage() {
           <input
             type="text"
             className="search-input"
-            placeholder="Ketik namamu..."
+            placeholder="Type your name..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            aria-label="Cari namamu"
+            aria-label="Search for your name"
           />
         </div>
 
@@ -132,7 +134,7 @@ export default function HomePage() {
                     <span className="code">{codeFor(letter.name)}</span>
                   </span>
                   <span className="name">{letter.name}</span>
-                  <span className="cta">Buka surat →</span>
+                  <span className="cta">Open letter →</span>
                 </span>
                 <span className="stub-tear">
                   <span className="stub-glyph">缘</span>
@@ -141,10 +143,10 @@ export default function HomePage() {
             ))}
           </div>
         ) : (
-          <p className="empty-state">Nama itu tidak ada di daftar 五班 ini~</p>
+          <p className="empty-state">That name isn't on the list~</p>
         )}
 
-        <p className="paper-footer">此去经年 · Zhejiang, Musim Semi</p>
+        <p className="paper-footer">此去经年 · Zhejiang, Spring</p>
       </section>
     </>
   );

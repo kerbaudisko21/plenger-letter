@@ -23,14 +23,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "此去春来 — Surat Perpisahan Zhejiang",
+  title: "此去经年 — Farewell Letters",
   description:
-    "Setahun belajar bahasa bareng di Zhejiang, dan sekarang saatnya berpisah. Pilih namamu untuk membaca suratnya.",
+    "A year of studying language together in Zhejiang has come to an end. Choose your name to read your letter.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
+    <html lang="en">
       <body
         className={`${notoSerifSC.variable} ${maShanZheng.variable} ${plusJakarta.variable}`}
       >

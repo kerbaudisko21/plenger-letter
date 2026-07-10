@@ -21,8 +21,8 @@ export function generateMetadata({ params }) {
   const letter = getLetterBySlug(params.slug);
   if (!letter) return { title: "Surat tidak ditemukan" };
   return {
-    title: `Surat untuk ${letter.name} — 此去经年`,
-    description: `Sepucuk surat perpisahan untuk ${letter.name}.`,
+    title: `A letter for ${letter.name} — 此去经年`,
+    description: `A farewell letter for ${letter.name}.`,
   };
 }
 
@@ -59,10 +59,10 @@ export default function LetterPage({ params }) {
 
         <div className="letter-hero-inner">
           <Link href="/" className="back-link">
-            ← pilih nama lain
+            ← choose another name
           </Link>
           <div className="letter-hero-title">
-            <span className="eyebrow">Boarding pass · 五班</span>
+            <span className="eyebrow">Boarding pass · Zhejiang</span>
             <h1>{letter.name}</h1>
           </div>
         </div>
@@ -77,11 +77,11 @@ export default function LetterPage({ params }) {
             </div>
             <div className="field">
               <div className="k">To</div>
-              <div className="v">{codeFor(letter.name)} · Babak Baru</div>
+              <div className="v">{codeFor(letter.name)} · Next Chapter</div>
             </div>
             <div className="field">
-              <div className="k">Kelas</div>
-              <div className="v">五班</div>
+              <div className="k">Status</div>
+              <div className="v">Boarding</div>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export default function LetterPage({ params }) {
             </div>
 
             {letter.lang === "hokkien" && (
-              <span className="letter-lang-note">Ditulis dalam Hokkien</span>
+              <span className="letter-lang-note">Written in Hokkien</span>
             )}
 
             <h2 className="letter-greeting">Dear {letter.nickname},</h2>
@@ -113,7 +113,7 @@ export default function LetterPage({ params }) {
             <div className="letter-signature">
               <span className="from">此去经年</span>
               <span className="meta">
-                Dari teman-temanmu di kelas bahasa,
+                From your friends in the language program,
                 <br />
                 Zhejiang 🌸
               </span>
@@ -124,7 +124,7 @@ export default function LetterPage({ params }) {
 
       <div className="next-wrap">
         <Link href={`/surat/${next.slug}`} className="next-link">
-          Lihat surat lain ({next.name}) →
+          See another letter ({next.name}) →
         </Link>
       </div>
     </>

@@ -9,7 +9,7 @@ export default function NotFound() {
       <BlossomBranch className="branch branch--br" />
 
       <div className="letter-hero-inner" style={{ alignItems: "center" }}>
-        <span className="eyebrow">五班</span>
+        <span className="eyebrow">Zhejiang</span>
         <h1
           className="brush-title"
           style={{ fontSize: "clamp(48px, 9vw, 80px)" }}
@@ -17,10 +17,10 @@ export default function NotFound() {
           找不到
         </h1>
         <p className="not-found">
-          Hmm, nama itu tidak ada di daftar suratnya.
+          Hmm, that name isn't on the letter list.
         </p>
         <Link href="/" className="back-link" style={{ marginTop: 18 }}>
-          ← kembali pilih nama
+          ← back to choose a name
         </Link>
       </div>
     </section>
